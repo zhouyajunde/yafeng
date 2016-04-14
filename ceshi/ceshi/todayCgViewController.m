@@ -12,7 +12,7 @@
 @interface todayCgViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tabview;
 
-@property (weak, nonatomic) IBOutlet UIView *headView;
+@property (strong, nonatomic) headView *hd;
 
 @end
 
@@ -21,8 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    headView *hd = [[headView alloc]init];
-    _tabview.tableHeaderView = hd;
+    self.hd = [[headView alloc]init];
+    self.hd.timeLab.textColor = [UIColor blackColor];
+    
+    self.hd.timeLab.font = [UIFont fontWithName:@"Helvetica" size:30];
+    _tabview.tableHeaderView = self.hd;
 }
 
 

@@ -1,5 +1,5 @@
 //
-//  headView.h
+//  timeLabel.h
 //  ceshi
 //
 //  Created by mac on 16/4/14.
@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "timeLabel.h"
 
-@interface headView : UIView
-
-@property (weak, nonatomic) IBOutlet timeLabel *timeLab;
+@interface timeLabel : UILabel
 
 @end

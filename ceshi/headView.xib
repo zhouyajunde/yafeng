@@ -20,24 +20,32 @@
                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAU-zA-C0d" customClass="timeView">
-                    <rect key="frame" x="89" y="50" width="180" height="42"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaZ-Sp-AuF">
+                    <rect key="frame" x="118" y="52" width="123" height="34"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="180" id="IKJ-cN-Lc1"/>
-                        <constraint firstAttribute="height" constant="42" id="JIh-9a-nED"/>
+                        <constraint firstAttribute="height" constant="34" id="Oig-Ps-JsM"/>
+                        <constraint firstAttribute="width" constant="123" id="T1g-Xv-ck3"/>
                     </constraints>
-                </view>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zA-Wy-m76">
+                    <rect key="frame" x="259" y="70" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <constraints>
-                <constraint firstItem="xAU-zA-C0d" firstAttribute="centerX" secondItem="ZAH-nv-3br" secondAttribute="centerX" id="FAX-s0-Xui"/>
+                <constraint firstItem="MaZ-Sp-AuF" firstAttribute="centerX" secondItem="ZAH-nv-3br" secondAttribute="centerX" id="HfW-5b-dOM"/>
                 <constraint firstItem="3V8-uC-kZl" firstAttribute="centerX" secondItem="ZAH-nv-3br" secondAttribute="centerX" id="JTr-XN-cPp"/>
+                <constraint firstItem="MaZ-Sp-AuF" firstAttribute="top" secondItem="ZAH-nv-3br" secondAttribute="top" constant="52" id="Ota-ig-IWt"/>
                 <constraint firstItem="3V8-uC-kZl" firstAttribute="top" secondItem="ZAH-nv-3br" secondAttribute="top" constant="32" id="QpR-Kb-kef"/>
-                <constraint firstItem="xAU-zA-C0d" firstAttribute="top" secondItem="ZAH-nv-3br" secondAttribute="top" constant="50" id="x4y-Si-zbO"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="timeLb" destination="xAU-zA-C0d" id="Aki-4B-R5w"/>
+                <outlet property="timeLab" destination="MaZ-Sp-AuF" id="PH4-ZG-X0U"/>
             </connections>
             <point key="canvasLocation" x="120.5" y="11.5"/>
         </view>

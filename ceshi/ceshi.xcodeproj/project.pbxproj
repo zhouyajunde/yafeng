@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D0D96931CBFA6520033BAFD /* timeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0D96921CBFA6520033BAFD /* timeLabel.m */; };
 		9D2D85A61CBF7992005696D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D85A51CBF7992005696D0 /* main.m */; };
 		9D2D85A91CBF7992005696D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D85A81CBF7992005696D0 /* AppDelegate.m */; };
 		9D2D85AC1CBF7992005696D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D85AB1CBF7992005696D0 /* ViewController.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D0D96911CBFA6520033BAFD /* timeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timeLabel.h; sourceTree = "<group>"; };
+		9D0D96921CBFA6520033BAFD /* timeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = timeLabel.m; sourceTree = "<group>"; };
 		9D2D85A11CBF7992005696D0 /* ceshi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ceshi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2D85A51CBF7992005696D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9D2D85A71CBF7992005696D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 				9D2D85E41CBF982D005696D0 /* headView.h */,
 				9D2D85E51CBF982D005696D0 /* headView.m */,
 				9D2D85E71CBF984B005696D0 /* headView.xib */,
+				9D0D96911CBFA6520033BAFD /* timeLabel.h */,
+				9D0D96921CBFA6520033BAFD /* timeLabel.m */,
 				9D2D85D71CBF7B4E005696D0 /* timeView.h */,
 				9D2D85D81CBF7B4E005696D0 /* timeView.m */,
 				9D2D85A71CBF7992005696D0 /* AppDelegate.h */,
@@ -307,6 +312,7 @@
 				9D2D85E61CBF982D005696D0 /* headView.m in Sources */,
 				9D2D85DD1CBF7B56005696D0 /* xingqingViewController.m in Sources */,
 				9D2D85A61CBF7992005696D0 /* main.m in Sources */,
+				9D0D96931CBFA6520033BAFD /* timeLabel.m in Sources */,
 				9D2D85E21CBF8E17005696D0 /* todayCgViewController.m in Sources */,
 				9D2D85D91CBF7B4E005696D0 /* timeView.m in Sources */,
 			);

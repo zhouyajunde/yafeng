@@ -7,11 +7,11 @@
 //
 
 #import "xingqingViewController.h"
-#import "timeView.h"
+#import "timeLabel.h"
 
 @interface xingqingViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *todayCg;
-@property (weak, nonatomic) IBOutlet timeView *timL;
+@property (weak, nonatomic) IBOutlet timeLabel *timL;
 
 @end
 
@@ -21,9 +21,9 @@
     [super viewDidLoad];
     
     
-    self.timL.timeLable.textColor = [UIColor redColor];
+    self.timL.textColor = [UIColor redColor];
     
-    self.timL.timeLable.font = [UIFont fontWithName:@"Helvetica" size:30];
+    self.timL.font = [UIFont fontWithName:@"Helvetica" size:30];
     
     [_todayCg.layer setMasksToBounds:YES];
     [_todayCg.layer setCornerRadius:10.0]; //设置矩形四个圆角半径

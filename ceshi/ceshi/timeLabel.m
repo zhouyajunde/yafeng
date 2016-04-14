@@ -1,7 +1,13 @@
+//
+//  timeLabel.m
+//  ceshi
+//
+//  Created by mac on 16/4/14.
+//  Copyright © 2016年 mac. All rights reserved.
+//
 
-#import "timeView.h"
-
-@interface timeView ()
+#import "timeLabel.h"
+@interface timeLabel ()
 {
     
 }
@@ -9,17 +15,7 @@
 
 @end
 
-
-@implementation timeView
-
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        
-    }
-    return self;
-}
+@implementation timeLabel
 
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
@@ -30,14 +26,9 @@
         self.currentTimeTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerFireMethod) userInfo:nil repeats:YES];
         
         [[NSRunLoop mainRunLoop] addTimer:self.currentTimeTimer forMode:NSRunLoopCommonModes];
+        self.textColor = [UIColor redColor];
         
-        _timeLable = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
-        _timeLable.textColor = [UIColor whiteColor];
-      
-        _timeLable.textAlignment = NSTextAlignmentCenter;
-     
-        [self addSubview:_timeLable];
-        
+        self.textAlignment = NSTextAlignmentCenter;
     }
     return self;
 }
@@ -54,12 +45,12 @@
     NSString *str_second = [NSString stringWithFormat:@"%02d",time%60];
     //format of time
     NSString *format_time = [NSString stringWithFormat:@"%@:%@:%@",str_hour,str_minute,str_second];
-    _timeLable.text = format_time;
+    self.text = format_time;
     
 }
 // 获取当前时间
 -( long long )getCurrentTime{
-
+    
     NSDate *senddate=[NSDate date];
     NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
     [formatter setDateFormat:@"HH:mm:ss"];
@@ -85,4 +76,5 @@
     long long  time = (a*60*60 + c*60 + b);
     return time;
 }
+
 @end
