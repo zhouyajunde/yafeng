@@ -7,8 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "xingqingViewController.h"
+#import "todayCgViewController.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIButton *tiaozhuan;
+
+- (IBAction)btn:(id)sender;
+- (IBAction)jinri:(id)sender;
 
 @end
 
@@ -16,12 +23,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+   
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)btn:(id)sender {
+    
+    xingqingViewController *xb = [[xingqingViewController alloc]init];
+    
+    [self.navigationController pushViewController:xb animated:YES];
 }
-
+- (IBAction)jinri:(id)sender {
+    
+    todayCgViewController *tc = [[todayCgViewController alloc]init];
+    
+    [self.navigationController pushViewController:tc animated:YES];
+}
 @end

@@ -15,6 +15,13 @@
 		9D2D85B41CBF7992005696D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2D85B21CBF7992005696D0 /* LaunchScreen.storyboard */; };
 		9D2D85BF1CBF7992005696D0 /* ceshiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D85BE1CBF7992005696D0 /* ceshiTests.m */; };
 		9D2D85CA1CBF7992005696D0 /* ceshiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D85C91CBF7992005696D0 /* ceshiUITests.m */; };
+		9D2D85D91CBF7B4E005696D0 /* timeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D85D81CBF7B4E005696D0 /* timeView.m */; };
+		9D2D85DD1CBF7B56005696D0 /* xingqingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D85DB1CBF7B56005696D0 /* xingqingViewController.m */; };
+		9D2D85DE1CBF7B56005696D0 /* xingqingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2D85DC1CBF7B56005696D0 /* xingqingViewController.xib */; };
+		9D2D85E21CBF8E17005696D0 /* todayCgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D85E01CBF8E17005696D0 /* todayCgViewController.m */; };
+		9D2D85E31CBF8E17005696D0 /* todayCgViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2D85E11CBF8E17005696D0 /* todayCgViewController.xib */; };
+		9D2D85E61CBF982D005696D0 /* headView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D85E51CBF982D005696D0 /* headView.m */; };
+		9D2D85E81CBF984B005696D0 /* headView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2D85E71CBF984B005696D0 /* headView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,17 @@
 		9D2D85C51CBF7992005696D0 /* ceshiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ceshiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2D85C91CBF7992005696D0 /* ceshiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ceshiUITests.m; sourceTree = "<group>"; };
 		9D2D85CB1CBF7993005696D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D2D85D71CBF7B4E005696D0 /* timeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timeView.h; sourceTree = "<group>"; };
+		9D2D85D81CBF7B4E005696D0 /* timeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = timeView.m; sourceTree = "<group>"; };
+		9D2D85DA1CBF7B56005696D0 /* xingqingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xingqingViewController.h; sourceTree = "<group>"; };
+		9D2D85DB1CBF7B56005696D0 /* xingqingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xingqingViewController.m; sourceTree = "<group>"; };
+		9D2D85DC1CBF7B56005696D0 /* xingqingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = xingqingViewController.xib; sourceTree = "<group>"; };
+		9D2D85DF1CBF8E17005696D0 /* todayCgViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = todayCgViewController.h; sourceTree = "<group>"; };
+		9D2D85E01CBF8E17005696D0 /* todayCgViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = todayCgViewController.m; sourceTree = "<group>"; };
+		9D2D85E11CBF8E17005696D0 /* todayCgViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = todayCgViewController.xib; sourceTree = "<group>"; };
+		9D2D85E41CBF982D005696D0 /* headView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = headView.h; sourceTree = "<group>"; };
+		9D2D85E51CBF982D005696D0 /* headView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = headView.m; sourceTree = "<group>"; };
+		9D2D85E71CBF984B005696D0 /* headView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = headView.xib; path = ../headView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +119,17 @@
 		9D2D85A31CBF7992005696D0 /* ceshi */ = {
 			isa = PBXGroup;
 			children = (
+				9D2D85DA1CBF7B56005696D0 /* xingqingViewController.h */,
+				9D2D85DB1CBF7B56005696D0 /* xingqingViewController.m */,
+				9D2D85DC1CBF7B56005696D0 /* xingqingViewController.xib */,
+				9D2D85DF1CBF8E17005696D0 /* todayCgViewController.h */,
+				9D2D85E01CBF8E17005696D0 /* todayCgViewController.m */,
+				9D2D85E11CBF8E17005696D0 /* todayCgViewController.xib */,
+				9D2D85E41CBF982D005696D0 /* headView.h */,
+				9D2D85E51CBF982D005696D0 /* headView.m */,
+				9D2D85E71CBF984B005696D0 /* headView.xib */,
+				9D2D85D71CBF7B4E005696D0 /* timeView.h */,
+				9D2D85D81CBF7B4E005696D0 /* timeView.m */,
 				9D2D85A71CBF7992005696D0 /* AppDelegate.h */,
 				9D2D85A81CBF7992005696D0 /* AppDelegate.m */,
 				9D2D85AA1CBF7992005696D0 /* ViewController.h */,
@@ -243,9 +272,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2D85E31CBF8E17005696D0 /* todayCgViewController.xib in Resources */,
 				9D2D85B41CBF7992005696D0 /* LaunchScreen.storyboard in Resources */,
 				9D2D85B11CBF7992005696D0 /* Assets.xcassets in Resources */,
 				9D2D85AF1CBF7992005696D0 /* Main.storyboard in Resources */,
+				9D2D85E81CBF984B005696D0 /* headView.xib in Resources */,
+				9D2D85DE1CBF7B56005696D0 /* xingqingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +304,11 @@
 			files = (
 				9D2D85AC1CBF7992005696D0 /* ViewController.m in Sources */,
 				9D2D85A91CBF7992005696D0 /* AppDelegate.m in Sources */,
+				9D2D85E61CBF982D005696D0 /* headView.m in Sources */,
+				9D2D85DD1CBF7B56005696D0 /* xingqingViewController.m in Sources */,
 				9D2D85A61CBF7992005696D0 /* main.m in Sources */,
+				9D2D85E21CBF8E17005696D0 /* todayCgViewController.m in Sources */,
+				9D2D85D91CBF7B4E005696D0 /* timeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +449,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ceshi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wrox.ceshi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +462,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ceshi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wrox.ceshi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +536,7 @@
 				9D2D85D01CBF7993005696D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D2D85D11CBF7993005696D0 /* Build configuration list for PBXNativeTarget "ceshiTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +545,7 @@
 				9D2D85D31CBF7993005696D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D2D85D41CBF7993005696D0 /* Build configuration list for PBXNativeTarget "ceshiUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +554,7 @@
 				9D2D85D61CBF7993005696D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
