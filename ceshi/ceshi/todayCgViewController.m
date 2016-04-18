@@ -22,9 +22,6 @@
     [super viewDidLoad];
     
     self.hd = [[headView alloc]init];
-    self.hd.timeLab.textColor = [UIColor blackColor];
-    
-    self.hd.timeLab.font = [UIFont fontWithName:@"Helvetica" size:30];
     _tabview.tableHeaderView = self.hd;
 }
 

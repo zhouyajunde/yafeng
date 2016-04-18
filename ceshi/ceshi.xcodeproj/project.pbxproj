@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9D0D96931CBFA6520033BAFD /* timeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0D96921CBFA6520033BAFD /* timeLabel.m */; };
+		9D2D4E001CC4D2FA00B0347A /* mohuviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D4DFF1CC4D2FA00B0347A /* mohuviewViewController.m */; };
+		9D2D4E041CC4D4EB00B0347A /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D4E031CC4D4EB00B0347A /* UIImage+ImageEffects.m */; };
 		9D2D85A61CBF7992005696D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D85A51CBF7992005696D0 /* main.m */; };
 		9D2D85A91CBF7992005696D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D85A81CBF7992005696D0 /* AppDelegate.m */; };
 		9D2D85AC1CBF7992005696D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D85AB1CBF7992005696D0 /* ViewController.m */; };
@@ -45,6 +47,10 @@
 /* Begin PBXFileReference section */
 		9D0D96911CBFA6520033BAFD /* timeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timeLabel.h; sourceTree = "<group>"; };
 		9D0D96921CBFA6520033BAFD /* timeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = timeLabel.m; sourceTree = "<group>"; };
+		9D2D4DFE1CC4D2FA00B0347A /* mohuviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mohuviewViewController.h; sourceTree = "<group>"; };
+		9D2D4DFF1CC4D2FA00B0347A /* mohuviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mohuviewViewController.m; sourceTree = "<group>"; };
+		9D2D4E021CC4D4EB00B0347A /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		9D2D4E031CC4D4EB00B0347A /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		9D2D85A11CBF7992005696D0 /* ceshi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ceshi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2D85A51CBF7992005696D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9D2D85A71CBF7992005696D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D2D4E011CC4D4D400B0347A /* 背景模糊 */ = {
+			isa = PBXGroup;
+			children = (
+				9D2D4E021CC4D4EB00B0347A /* UIImage+ImageEffects.h */,
+				9D2D4E031CC4D4EB00B0347A /* UIImage+ImageEffects.m */,
+			);
+			name = "背景模糊";
+			sourceTree = "<group>";
+		};
 		9D2D85981CBF7992005696D0 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +137,9 @@
 		9D2D85A31CBF7992005696D0 /* ceshi */ = {
 			isa = PBXGroup;
 			children = (
+				9D2D4E011CC4D4D400B0347A /* 背景模糊 */,
+				9D2D4DFE1CC4D2FA00B0347A /* mohuviewViewController.h */,
+				9D2D4DFF1CC4D2FA00B0347A /* mohuviewViewController.m */,
 				9D2D85DA1CBF7B56005696D0 /* xingqingViewController.h */,
 				9D2D85DB1CBF7B56005696D0 /* xingqingViewController.m */,
 				9D2D85DC1CBF7B56005696D0 /* xingqingViewController.xib */,
@@ -241,6 +259,7 @@
 				TargetAttributes = {
 					9D2D85A01CBF7992005696D0 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 7E589987VY;
 					};
 					9D2D85B91CBF7992005696D0 = {
 						CreatedOnToolsVersion = 7.3;
@@ -312,6 +331,8 @@
 				9D2D85E61CBF982D005696D0 /* headView.m in Sources */,
 				9D2D85DD1CBF7B56005696D0 /* xingqingViewController.m in Sources */,
 				9D2D85A61CBF7992005696D0 /* main.m in Sources */,
+				9D2D4E001CC4D2FA00B0347A /* mohuviewViewController.m in Sources */,
+				9D2D4E041CC4D4EB00B0347A /* UIImage+ImageEffects.m in Sources */,
 				9D0D96931CBFA6520033BAFD /* timeLabel.m in Sources */,
 				9D2D85E21CBF8E17005696D0 /* todayCgViewController.m in Sources */,
 				9D2D85D91CBF7B4E005696D0 /* timeView.m in Sources */,
@@ -456,11 +477,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ceshi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wrox.ceshi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -469,11 +492,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ceshi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wrox.ceshi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -22,13 +22,13 @@
    
     self = [[NSBundle mainBundle] loadNibNamed:@"headView" owner:nil options:nil][0];
     
-//    if (self) {
-//        
-//        self.timeLab.textColor = [UIColor blackColor];
-//        
-//        self.timeLab.font = [UIFont fontWithName:@"Helvetica" size:30];
-//        
-//    }
+    if (self) {
+        
+        self.timeLab.textColor = [UIColor blackColor];
+        
+        self.timeLab.font = [UIFont fontWithName:@"Helvetica" size:30];
+        
+    }
     return self;
 }
 
