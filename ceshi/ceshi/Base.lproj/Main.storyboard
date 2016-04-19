@@ -34,25 +34,65 @@
                                     <action selector="jinri:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbP-5j-KZ4"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LabelLabelLabelLabelLabelLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRn-nU-PfC">
+                                <rect key="frame" x="20" y="78" width="189" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYa-fm-JTe">
+                                <rect key="frame" x="195" y="349" width="51" height="30"/>
+                                <state key="normal" title="跑马灯"/>
+                                <connections>
+                                    <segue destination="4vB-1s-z9y" kind="push" id="0Fq-aq-Ak7"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bc-iL-wwI">
-                                <rect key="frame" x="62" y="403" width="74" height="30"/>
+                                <rect key="frame" x="55" y="354" width="74" height="30"/>
                                 <state key="normal" title="模糊背景"/>
                                 <connections>
                                     <segue destination="Piz-0t-kt5" kind="push" id="RPs-bN-6VN"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qz4-wO-W2B">
+                                <rect key="frame" x="74" y="126" width="191" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="BTP-Vn-Qd5"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="lab" destination="qz4-wO-W2B" id="U4z-mP-uC9"/>
+                        <outlet property="paomaDe" destination="qRn-nU-PfC" id="wjT-VC-gF9"/>
                         <outlet property="tiaozhuan" destination="fVu-OP-iry" id="ZHZ-nh-40o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-359" y="230"/>
+            <point key="canvasLocation" x="-570" y="230"/>
+        </scene>
+        <!--Paom View Controller-->
+        <scene sceneID="iAx-xU-cUa">
+            <objects>
+                <viewController id="4vB-1s-z9y" customClass="paomViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yPC-AB-y9L"/>
+                        <viewControllerLayoutGuide type="bottom" id="wTY-fv-Qc5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b4R-aw-5BB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KxY-Hh-CNe"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pu4-Ai-iNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-218" y="230"/>
         </scene>
         <!--Mohuview View Controller-->
         <scene sceneID="Txq-Id-knx">
@@ -72,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yKL-ZB-wX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-359" y="901"/>
+            <point key="canvasLocation" x="-570" y="917"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MQ2-pw-zQ6">
@@ -89,7 +129,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vfO-D2-F9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-755" y="230"/>
+            <point key="canvasLocation" x="-1003" y="230"/>
         </scene>
     </scenes>
 </document>
