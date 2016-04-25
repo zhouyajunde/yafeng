@@ -12,6 +12,9 @@
 @interface xingqingViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *todayCg;
 @property (weak, nonatomic) IBOutlet timeLabel *timL;
+@property (weak, nonatomic) IBOutlet UITableView *tabview;
+- (IBAction)Btn:(id)sender;
+- (IBAction)allCg:(id)sender;
 
 @end
 
@@ -33,9 +36,54 @@
     [_todayCg.layer setBorderColor:colorref];//边框颜色
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 0.1;
 }
 
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"123"];
+    cell.textLabel.text = @"cell";
+    return cell;
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+     [super.navigationController setNavigationBarHidden:YES];
+}
+
+- (IBAction)Btn:(id)sender {
+    
+    NSLog(@"00");
+    
+//    [self dismissViewControllerAnimated:YES completion:nil];
+    [UIView animateWithDuration:0.3 animations:^{
+        //要执行的动画
+        CGRect rect = [self.view frame];
+        rect.origin.x = rect.origin.x + rect.size.width;
+        [self.view setFrame:rect];
+    } completion:^(BOOL finshed){
+        [self.view removeFromSuperview];
+    }];
+
+}
+
+- (IBAction)allCg:(id)sender {
+    NSLog(@"00");
+//    [UIView animateWithDuration:0.3 animations:^{
+//        //要执行的动画
+//        CGRect rect = [self.view frame];
+//        rect.origin.x = rect.origin.x + rect.size.width;
+//        [self.view setFrame:rect];
+//    } completion:^(BOOL finshed){
+//        [self.view removeFromSuperview];
+//    }];
+//
+}
 @end

@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="xingqingViewController">
             <connections>
+                <outlet property="tabview" destination="jft-yC-SKh" id="GG6-f8-Ls4"/>
                 <outlet property="timL" destination="Zhc-eP-sE4" id="g4z-iC-pqb"/>
                 <outlet property="todayCg" destination="bOj-yC-ge6" id="5oV-c1-7pD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -105,9 +106,22 @@
                             <color key="value" white="0.5549496644295302" alpha="1" colorSpace="calibratedWhite"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="allCg:" destination="-1" eventType="touchUpInside" id="Hvd-ry-2D7"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Fv-Mf-OM2">
                     <rect key="frame" x="0.0" y="285" width="320" height="68"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jft-yC-SKh">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="rzx-s7-mbQ"/>
+                                <outlet property="delegate" destination="-1" id="X9N-Nr-4mk"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhc-eP-sE4" customClass="timeLabel">
@@ -116,9 +130,19 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XZr-zv-xwc">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1He-FJ-Y10">
+                    <rect key="frame" x="28" y="93" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="Btn:" destination="-1" eventType="touchUpInside" id="z5g-aN-YMs"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <nil key="simulatedBottomBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <point key="canvasLocation" x="28" y="378"/>

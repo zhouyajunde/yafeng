@@ -10,11 +10,16 @@
 #import "xingqingViewController.h"
 #import "todayCgViewController.h"
 #import "BBFlashCtntLabel.h"
+#import "UIImage+UIImage_Circle.h"
 
 @interface ViewController ()
 
+
+@property (strong,nonatomic) xingqingViewController *xb;
+
 @property (weak, nonatomic) IBOutlet UIButton *tiaozhuan;
 
+@property (weak, nonatomic) IBOutlet UIImageView *imgede;
 - (IBAction)btn:(id)sender;
 - (IBAction)jinri:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *lab;
@@ -28,6 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.imgede.image = [UIImage circleImageWithName:@"imgaead" borderWidth:2 borderColor:[UIColor whiteColor]];
     CGRect frame = _paomaDe.frame;
     frame.origin.x = -180;
     _paomaDe.frame = frame;
@@ -57,9 +63,59 @@
 }
 - (IBAction)btn:(id)sender {
     
-    xingqingViewController *xb = [[xingqingViewController alloc]init];
+    _xb = [[xingqingViewController alloc]init];
     
-    [self.navigationController pushViewController:xb animated:YES];
+   
+    
+//    if (![self.view.subviews containsObject:_xb.view]) {
+        [self AddView:_xb.view];
+//    }
+    
+//    [UIView animateWithDuration:0.3 animations:^{
+//        //要执行的动画
+//        [super.navigationController setNavigationBarHidden:YES];
+//        [self.view addSubview:xb.view];
+//    } completion:^(BOOL finshed){
+//        
+////        [self.view removeFromSuperview];
+//    }];
+//    
+//    CATransition *animation = [CATransition animation];
+//    [animation setDuration:0.5];
+//    [animation setType:kCATransitionPush];
+//    [animation setSubtype:kCATransitionFromRight];
+//    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+//    [[xb.view layer] addAnimation:animation forKey:@"SwitchToView"];
+//    
+//    
+////    xb.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+//    [self presentViewController:xb animated:NO completion:nil];
+    
+//    [self.navigationController pushViewController:xb animated:YES];
+}
+
+-(void)AddView:(UIView*)view
+{
+    [view setFrame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds))];
+    [self.view.superview addSubview:view];
+    int ix=self.view.superview.frame.origin.x;
+    int ih=self.view.frame.size.height;
+    CGRect rect = [self.view frame];
+    //    if (isArLang())//DTS2015081201198 20150818 modified by wwx277866
+    //    {
+    //        rect.origin.x = rect.origin.x - rect.size.width;
+    //    }
+    //    else
+    //    {
+    rect.origin.x = rect.origin.x + rect.size.width;
+    //    }
+    rect.size.height = CGRectGetHeight([UIScreen mainScreen].bounds);
+    [view setFrame:rect];
+    [UIView animateWithDuration:0.3 animations:^{
+        //要执行的动画
+        [view setFrame:CGRectMake(0-ix, 0, CGRectGetWidth([UIScreen mainScreen].bounds), ih)];
+    } completion:^(BOOL finshed){
+    }];
 }
 - (IBAction)jinri:(id)sender {
     

@@ -27,6 +27,7 @@
 		9D2D85E81CBF984B005696D0 /* headView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2D85E71CBF984B005696D0 /* headView.xib */; };
 		9D50F08F1CC617C900B33EFB /* BBFlashCtntLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D50F08E1CC617C900B33EFB /* BBFlashCtntLabel.m */; };
 		9D50F0921CC61CBB00B33EFB /* paomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D50F0911CC61CBB00B33EFB /* paomViewController.m */; };
+		9DDF61A81CC87EE800202566 /* UIImage+UIImage_Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF61A71CC87EE800202566 /* UIImage+UIImage_Circle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,8 @@
 		9D50F08E1CC617C900B33EFB /* BBFlashCtntLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFlashCtntLabel.m; sourceTree = "<group>"; };
 		9D50F0901CC61CBB00B33EFB /* paomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paomViewController.h; sourceTree = "<group>"; };
 		9D50F0911CC61CBB00B33EFB /* paomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = paomViewController.m; sourceTree = "<group>"; };
+		9DDF61A61CC87EE800202566 /* UIImage+UIImage_Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+UIImage_Circle.h"; sourceTree = "<group>"; };
+		9DDF61A71CC87EE800202566 /* UIImage+UIImage_Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UIImage_Circle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,7 @@
 		9D2D85A31CBF7992005696D0 /* ceshi */ = {
 			isa = PBXGroup;
 			children = (
+				9DDF61A51CC87E9E00202566 /* category */,
 				9D50F08C1CC617B900B33EFB /* paoma */,
 				9D2D4E011CC4D4D400B0347A /* 背景模糊 */,
 				9D2D4DFE1CC4D2FA00B0347A /* mohuviewViewController.h */,
@@ -208,6 +212,15 @@
 				9D50F08E1CC617C900B33EFB /* BBFlashCtntLabel.m */,
 			);
 			name = paoma;
+			sourceTree = "<group>";
+		};
+		9DDF61A51CC87E9E00202566 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				9DDF61A61CC87EE800202566 /* UIImage+UIImage_Circle.h */,
+				9DDF61A71CC87EE800202566 /* UIImage+UIImage_Circle.m */,
+			);
+			name = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +367,7 @@
 				9D2D4E041CC4D4EB00B0347A /* UIImage+ImageEffects.m in Sources */,
 				9D0D96931CBFA6520033BAFD /* timeLabel.m in Sources */,
 				9D2D85E21CBF8E17005696D0 /* todayCgViewController.m in Sources */,
+				9DDF61A81CC87EE800202566 /* UIImage+UIImage_Circle.m in Sources */,
 				9D2D85D91CBF7B4E005696D0 /* timeView.m in Sources */,
 				9D50F0921CC61CBB00B33EFB /* paomViewController.m in Sources */,
 			);
