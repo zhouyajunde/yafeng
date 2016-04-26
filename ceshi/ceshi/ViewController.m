@@ -135,7 +135,6 @@
     if (![self.view.subviews containsObject:_cgview.view]) {
         [self AddView:_cgview.view];
     }
-
     
 //    todayCgViewController *tc = [[todayCgViewController alloc]init];
 //    
