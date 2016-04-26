@@ -27,6 +27,11 @@
 		9D2D85E81CBF984B005696D0 /* headView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2D85E71CBF984B005696D0 /* headView.xib */; };
 		9D50F08F1CC617C900B33EFB /* BBFlashCtntLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D50F08E1CC617C900B33EFB /* BBFlashCtntLabel.m */; };
 		9D50F0921CC61CBB00B33EFB /* paomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D50F0911CC61CBB00B33EFB /* paomViewController.m */; };
+		9D53ED0B1CCF417E00F1752B /* ChallengeTodaynoPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D53ED091CCF417E00F1752B /* ChallengeTodaynoPerson.m */; };
+		9D53ED0C1CCF417E00F1752B /* ChallengeTodaynoPerson.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D53ED0A1CCF417E00F1752B /* ChallengeTodaynoPerson.xib */; };
+		9D53ED0F1CCF4B8600F1752B /* PreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D53ED0E1CCF4B8600F1752B /* PreHelper.m */; };
+		9D53ED131CCF683B00F1752B /* HistoricalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D53ED111CCF683B00F1752B /* HistoricalRecord.m */; };
+		9D53ED141CCF683B00F1752B /* HistoricalRecord.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D53ED121CCF683B00F1752B /* HistoricalRecord.xib */; };
 		9DDF61A81CC87EE800202566 /* UIImage+UIImage_Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF61A71CC87EE800202566 /* UIImage+UIImage_Circle.m */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +90,14 @@
 		9D50F08E1CC617C900B33EFB /* BBFlashCtntLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFlashCtntLabel.m; sourceTree = "<group>"; };
 		9D50F0901CC61CBB00B33EFB /* paomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paomViewController.h; sourceTree = "<group>"; };
 		9D50F0911CC61CBB00B33EFB /* paomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = paomViewController.m; sourceTree = "<group>"; };
+		9D53ED081CCF417E00F1752B /* ChallengeTodaynoPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeTodaynoPerson.h; sourceTree = "<group>"; };
+		9D53ED091CCF417E00F1752B /* ChallengeTodaynoPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeTodaynoPerson.m; sourceTree = "<group>"; };
+		9D53ED0A1CCF417E00F1752B /* ChallengeTodaynoPerson.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChallengeTodaynoPerson.xib; sourceTree = "<group>"; };
+		9D53ED0D1CCF4B8600F1752B /* PreHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreHelper.h; sourceTree = "<group>"; };
+		9D53ED0E1CCF4B8600F1752B /* PreHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreHelper.m; sourceTree = "<group>"; };
+		9D53ED101CCF683B00F1752B /* HistoricalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricalRecord.h; sourceTree = "<group>"; };
+		9D53ED111CCF683B00F1752B /* HistoricalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricalRecord.m; sourceTree = "<group>"; };
+		9D53ED121CCF683B00F1752B /* HistoricalRecord.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoricalRecord.xib; sourceTree = "<group>"; };
 		9DDF61A61CC87EE800202566 /* UIImage+UIImage_Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+UIImage_Circle.h"; sourceTree = "<group>"; };
 		9DDF61A71CC87EE800202566 /* UIImage+UIImage_Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UIImage_Circle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,11 +159,19 @@
 		9D2D85A31CBF7992005696D0 /* ceshi */ = {
 			isa = PBXGroup;
 			children = (
+				9D53ED0D1CCF4B8600F1752B /* PreHelper.h */,
+				9D53ED0E1CCF4B8600F1752B /* PreHelper.m */,
 				9DDF61A51CC87E9E00202566 /* category */,
 				9D50F08C1CC617B900B33EFB /* paoma */,
 				9D2D4E011CC4D4D400B0347A /* 背景模糊 */,
 				9D2D4DFE1CC4D2FA00B0347A /* mohuviewViewController.h */,
 				9D2D4DFF1CC4D2FA00B0347A /* mohuviewViewController.m */,
+				9D53ED081CCF417E00F1752B /* ChallengeTodaynoPerson.h */,
+				9D53ED091CCF417E00F1752B /* ChallengeTodaynoPerson.m */,
+				9D53ED0A1CCF417E00F1752B /* ChallengeTodaynoPerson.xib */,
+				9D53ED101CCF683B00F1752B /* HistoricalRecord.h */,
+				9D53ED111CCF683B00F1752B /* HistoricalRecord.m */,
+				9D53ED121CCF683B00F1752B /* HistoricalRecord.xib */,
 				9D50F0901CC61CBB00B33EFB /* paomViewController.h */,
 				9D50F0911CC61CBB00B33EFB /* paomViewController.m */,
 				9D2D85DA1CBF7B56005696D0 /* xingqingViewController.h */,
@@ -330,8 +351,10 @@
 				9D2D85E31CBF8E17005696D0 /* todayCgViewController.xib in Resources */,
 				9D2D85B41CBF7992005696D0 /* LaunchScreen.storyboard in Resources */,
 				9D2D85B11CBF7992005696D0 /* Assets.xcassets in Resources */,
+				9D53ED0C1CCF417E00F1752B /* ChallengeTodaynoPerson.xib in Resources */,
 				9D2D85AF1CBF7992005696D0 /* Main.storyboard in Resources */,
 				9D2D85E81CBF984B005696D0 /* headView.xib in Resources */,
+				9D53ED141CCF683B00F1752B /* HistoricalRecord.xib in Resources */,
 				9D2D85DE1CBF7B56005696D0 /* xingqingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,12 +387,15 @@
 				9D50F08F1CC617C900B33EFB /* BBFlashCtntLabel.m in Sources */,
 				9D2D85A61CBF7992005696D0 /* main.m in Sources */,
 				9D2D4E001CC4D2FA00B0347A /* mohuviewViewController.m in Sources */,
+				9D53ED0B1CCF417E00F1752B /* ChallengeTodaynoPerson.m in Sources */,
 				9D2D4E041CC4D4EB00B0347A /* UIImage+ImageEffects.m in Sources */,
 				9D0D96931CBFA6520033BAFD /* timeLabel.m in Sources */,
 				9D2D85E21CBF8E17005696D0 /* todayCgViewController.m in Sources */,
 				9DDF61A81CC87EE800202566 /* UIImage+UIImage_Circle.m in Sources */,
 				9D2D85D91CBF7B4E005696D0 /* timeView.m in Sources */,
 				9D50F0921CC61CBB00B33EFB /* paomViewController.m in Sources */,
+				9D53ED131CCF683B00F1752B /* HistoricalRecord.m in Sources */,
+				9D53ED0F1CCF4B8600F1752B /* PreHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

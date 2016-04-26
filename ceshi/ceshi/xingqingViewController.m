@@ -28,12 +28,12 @@
     
     self.timL.font = [UIFont fontWithName:@"Helvetica" size:30];
     
-    [_todayCg.layer setMasksToBounds:YES];
-    [_todayCg.layer setCornerRadius:10.0]; //设置矩形四个圆角半径
-    [_todayCg.layer setBorderWidth:1.0]; //边框宽度
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    CGColorRef colorref = CGColorCreate(colorSpace,(CGFloat[]){ 1, 0, 0, 1 });
-    [_todayCg.layer setBorderColor:colorref];//边框颜色
+//    [_todayCg.layer setMasksToBounds:YES];
+//    [_todayCg.layer setCornerRadius:10.0]; //设置矩形四个圆角半径
+//    [_todayCg.layer setBorderWidth:1.0]; //边框宽度
+//    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+//    CGColorRef colorref = CGColorCreate(colorSpace,(CGFloat[]){ 1, 0, 0, 1 });
+//    [_todayCg.layer setBorderColor:colorref];//边框颜色
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section

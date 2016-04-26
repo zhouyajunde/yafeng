@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tabview;
 @property (weak, nonatomic) IBOutlet UIView *addView;
 
+- (IBAction)bacBtn:(id)sender;
 @property (strong, nonatomic) headView *hd;
 
 @end
@@ -74,4 +75,16 @@
     return cell;
 }
 
+- (IBAction)bacBtn:(id)sender {
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        //要执行的动画
+        CGRect rect = [self.view frame];
+        rect.origin.x = rect.origin.x + rect.size.width;
+        [self.view setFrame:rect];
+    } completion:^(BOOL finshed){
+        [self.view removeFromSuperview];
+    }];
+
+}
 @end

@@ -11,11 +11,17 @@
 #import "todayCgViewController.h"
 #import "BBFlashCtntLabel.h"
 #import "UIImage+UIImage_Circle.h"
+#import "ChallengeTodaynoPerson.h"
+#import "HistoricalRecord.h"
 
 @interface ViewController ()
 
 
 @property (strong,nonatomic) xingqingViewController *xb;
+@property (strong,nonatomic) ChallengeTodaynoPerson *chperson;
+@property (strong,nonatomic) HistoricalRecord *htrecord;
+@property (strong,nonatomic) todayCgViewController *cgview;
+
 
 @property (weak, nonatomic) IBOutlet UIButton *tiaozhuan;
 
@@ -26,6 +32,10 @@
 
 @property (weak, nonatomic) IBOutlet BBFlashCtntLabel *viewLab;
 @property (weak, nonatomic) IBOutlet UILabel *paomaDe;
+
+- (IBAction)jinrnoChange:(id)sender;
+- (IBAction)lishiBtn:(id)sender;
+
 @end
 
 @implementation ViewController
@@ -119,8 +129,38 @@
 }
 - (IBAction)jinri:(id)sender {
     
-    todayCgViewController *tc = [[todayCgViewController alloc]init];
+    _cgview = [[todayCgViewController alloc]init];
     
-    [self.navigationController pushViewController:tc animated:YES];
+    [super.navigationController setNavigationBarHidden:YES];
+    if (![self.view.subviews containsObject:_cgview.view]) {
+        [self AddView:_cgview.view];
+    }
+
+    
+//    todayCgViewController *tc = [[todayCgViewController alloc]init];
+//    
+//    [self.navigationController pushViewController:tc animated:YES];
+}
+- (IBAction)jinrnoChange:(id)sender {
+    
+    
+    _chperson = [[ChallengeTodaynoPerson alloc]init];
+    
+     [super.navigationController setNavigationBarHidden:YES];
+    if (![self.view.subviews containsObject:_chperson.view]) {
+               [self AddView:_chperson.view];
+    }
+    
+}
+
+- (IBAction)lishiBtn:(id)sender {
+    
+    _htrecord = [[HistoricalRecord alloc]init];
+    
+    [super.navigationController setNavigationBarHidden:YES];
+    if (![self.view.subviews containsObject:_htrecord.view]) {
+        [self AddView:_htrecord.view];
+    }
+
 }
 @end

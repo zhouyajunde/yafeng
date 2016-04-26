@@ -6,11 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "ic_challenge_details_no score.png",
+      "filename" : "ic_challenge_title_today@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "ic_challenge_title_today@3x.png",
       "scale" : "3x"
     }
   ],

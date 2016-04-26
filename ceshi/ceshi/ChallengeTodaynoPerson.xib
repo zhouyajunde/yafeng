@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChallengeTodaynoPerson">
+            <connections>
+                <outlet property="challengeBtn" destination="QFb-vl-Yu5" id="KeH-nH-ohP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KYh-Ku-8T1" userLabel="today">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Pd-33-Mqr">
+                            <rect key="frame" x="0.0" y="20" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="B7i-Tn-DP8"/>
+                                <constraint firstAttribute="height" constant="44" id="hl5-z9-4tv"/>
+                            </constraints>
+                            <state key="normal" image="btn_titlebar_back_default"/>
+                            <connections>
+                                <action selector="bacBtn:" destination="-1" eventType="touchUpInside" id="XQp-Te-sNm"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日挑战" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDB-ZK-ehg">
+                            <rect key="frame" x="123" y="32" width="75" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="qdE-5w-qiK"/>
+                                <constraint firstAttribute="width" constant="75" id="yGQ-De-haS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0i-Hf-LhN">
+                            <rect key="frame" x="276" y="20" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="4OK-bO-p5a"/>
+                                <constraint firstAttribute="height" constant="44" id="KH4-Ym-qMJ"/>
+                            </constraints>
+                            <state key="normal" image="ic_challenge_title_today-1"/>
+                            <connections>
+                                <action selector="historyBtn:" destination="-1" eventType="touchUpInside" id="Kyx-ZV-Hqj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.82745098039999998" green="0.89019607840000003" blue="0.91372549020000005" alpha="0.99329202589999999" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="2s4-bm-QqA"/>
+                        <constraint firstItem="6Pd-33-Mqr" firstAttribute="leading" secondItem="KYh-Ku-8T1" secondAttribute="leading" id="5B7-eR-Mg4"/>
+                        <constraint firstAttribute="trailing" secondItem="J0i-Hf-LhN" secondAttribute="trailing" id="DQS-Ms-58H"/>
+                        <constraint firstItem="kDB-ZK-ehg" firstAttribute="centerY" secondItem="6Pd-33-Mqr" secondAttribute="centerY" id="XHV-EJ-7iL"/>
+                        <constraint firstAttribute="bottom" secondItem="J0i-Hf-LhN" secondAttribute="bottom" id="fF4-hh-IbJ"/>
+                        <constraint firstItem="kDB-ZK-ehg" firstAttribute="centerX" secondItem="KYh-Ku-8T1" secondAttribute="centerX" id="qkF-Ad-zFH"/>
+                        <constraint firstAttribute="bottom" secondItem="6Pd-33-Mqr" secondAttribute="bottom" id="vxI-E7-Fs6"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_challenge_details_no challenge" translatesAutoresizingMaskIntoConstraints="NO" id="AmZ-CI-xoE">
+                    <rect key="frame" x="75" y="127" width="170" height="170"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="AmZ-CI-xoE" secondAttribute="height" multiplier="1:1" id="PyX-ku-8Nl"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFb-vl-Yu5">
+                    <rect key="frame" x="15" y="514" width="290" height="39"/>
+                    <color key="backgroundColor" red="0.82745098039215681" green="0.8901960784313725" blue="0.9137254901960784" alpha="0.99329202586206899" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="jUZ-Af-lIf"/>
+                    </constraints>
+                    <state key="normal" title="发起挑战">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="startChallenge:" destination="-1" eventType="touchUpInside" id="SqY-AA-oNO"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日对手在哪里" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0z-qD-izR">
+                    <rect key="frame" x="98" y="307" width="124" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="124" id="jPU-B8-Tju"/>
+                        <constraint firstAttribute="height" constant="13" id="xco-l8-fcn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.41568627450980389" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="AmZ-CI-xoE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="75" id="2NB-JA-gWP"/>
+                <constraint firstItem="AmZ-CI-xoE" firstAttribute="top" secondItem="KYh-Ku-8T1" secondAttribute="bottom" constant="63" id="55Y-0o-QmT"/>
+                <constraint firstAttribute="bottom" secondItem="QFb-vl-Yu5" secondAttribute="bottom" constant="15" id="7hg-G9-Xo2"/>
+                <constraint firstAttribute="trailing" secondItem="AmZ-CI-xoE" secondAttribute="trailing" constant="75" id="A2l-S7-Lvi"/>
+                <constraint firstItem="KYh-Ku-8T1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MgU-sj-Ns3"/>
+                <constraint firstAttribute="trailing" secondItem="QFb-vl-Yu5" secondAttribute="trailing" constant="15" id="QTy-1t-F0h"/>
+                <constraint firstAttribute="trailing" secondItem="KYh-Ku-8T1" secondAttribute="trailing" id="c7f-D5-lcy"/>
+                <constraint firstItem="KYh-Ku-8T1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ewn-lp-8dZ"/>
+                <constraint firstItem="N0z-qD-izR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fQA-dJ-5r8"/>
+                <constraint firstItem="QFb-vl-Yu5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="kJe-yu-v3v"/>
+                <constraint firstItem="N0z-qD-izR" firstAttribute="top" secondItem="AmZ-CI-xoE" secondAttribute="bottom" constant="10" id="wJH-rJ-Ejt"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="150" y="332"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_titlebar_back_default" width="44" height="44"/>
+        <image name="ic_challenge_details_no challenge" width="396" height="396"/>
+        <image name="ic_challenge_title_today-1" width="29" height="29"/>
+    </resources>
+</document>
