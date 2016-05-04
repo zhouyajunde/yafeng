@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UITableView *tabview;
 - (IBAction)Btn:(id)sender;
 - (IBAction)allCg:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *winloseLab;
+@property (weak, nonatomic) IBOutlet UILabel *sumLab;
 
 @end
 
@@ -23,10 +25,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    self.timL.textColor = [UIColor redColor];
+    self.timL.textColor = [UIColor blackColor];
     
     self.timL.font = [UIFont fontWithName:@"Helvetica" size:30];
+    
+    NSString *text = @"115胜144负0平";
+    
+    NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:text];
+
+    //2、通过正则表达式来匹配数字
+    NSString *regex_emoji = @"\\d+"; //匹配数字
+    NSError *error = nil;
+    NSRegularExpression *re = [NSRegularExpression regularExpressionWithPattern:regex_emoji options:NSRegularExpressionCaseInsensitive error:&error];
+    if (!re) {
+        NSLog(@"%@", [error localizedDescription]);
+        
+    }
+    NSArray *resultArray = [re matchesInString:text options:0 range:NSMakeRange(0, text.length)];
+
+    
     
 //    [_todayCg.layer setMasksToBounds:YES];
 //    [_todayCg.layer setCornerRadius:10.0]; //设置矩形四个圆角半径
